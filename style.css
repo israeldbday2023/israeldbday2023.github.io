@@ -89,3 +89,35 @@ html, body {
     text-align: center;
     padding: 20px;
 }
+
+.toggle {
+    display: none;
+}
+
+.toggle-label::after {
+    content: '\25BE';
+    margin-left: 5px;
+}
+
+.toggle:checked ~ .toggle-label::after {
+    content: '\25B4';
+}
+
+.collapse {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked ~ .collapse {
+    display: inline-block;
+    max-height: 100vh;
+}
+
+.toggle:checked ~ .keynote-author {
+    font-weight: bold;
+}
