@@ -110,11 +110,6 @@ html, body {
 .collapse {
     display: none;
     max-height: 0;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  
-    transition: max-height .25s ease-in-out;
 }
 
 .toggle:checked ~ .collapse {
